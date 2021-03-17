@@ -1,5 +1,4 @@
 import Header from '../templates/Header';
-import Filter from '../templates/Filter';
 import Home from '../pages/Home';
 import Error404 from '../pages/Error404';
 import Country from '../pages/Country';
@@ -14,11 +13,9 @@ const routes = {
 
 const router = async () => {
     const $Header = null || document.getElementById('Header');
-    const $Filter = null || document.getElementById('Filter');
     const $Home = null || document.getElementById('Home');
 
     $Header.innerHTML = await Header(); 
-    $Filter.innerHTML = await Filter();
 
     let hash = getHash();
     let route = await resolveRoutes(hash);

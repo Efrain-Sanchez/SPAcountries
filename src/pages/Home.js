@@ -4,6 +4,7 @@ const Home = async () =>{
     const countries = await getData();
     console.log(countries);
     const view = `
+    
     <div class="Countries">
     ${countries.map((country) => `
         <article class="Countries__country">
