@@ -44,7 +44,19 @@ module.exports = {
                     "css-loader",
                     "sass-loader",
                 ]
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/,
+                loader: "file-loader",
+                use: [
+                    {
+                        loader: 'file-loader';
+                        options: {
+                          name: "public/assets/[name].[ext]",
+                        },
+                    },
+                ]
+            },
         ]
     }
 }
