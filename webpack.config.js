@@ -50,7 +50,7 @@ module.exports = {
                 loader: "file-loader",
                 use: [
                     {
-                        loader: 'file-loader';
+                        loader: 'file-loader',
                         options: {
                           name: "public/assets/[name].[ext]",
                         },
