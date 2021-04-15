@@ -68,6 +68,8 @@ $fontNunito: 'Nunito Sans';
 .Header {
     width: 100vw;
     height: 70px;
+    position: sticky;
+    top: 0px;
     display: flex;
     margin-bottom: 10px;
     padding: 0px 55px;
@@ -88,6 +90,9 @@ $fontNunito: 'Nunito Sans';
         font-weight: 600;
         display: flex;
         align-items: center;
+        h4{
+            background: $White;
+        }
         img {
             width: 20px;
             margin: 5px;

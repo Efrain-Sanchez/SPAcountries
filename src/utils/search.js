@@ -7,4 +7,3 @@ $form.addEventListener('submit', () =>{
     window.location.href = path + '#/' + $search.value
     $form.reset();
 })
-
